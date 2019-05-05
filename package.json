@@ -4,8 +4,7 @@
   "description": "mono repo prototype to develop some tools with the approach of trunk based development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
