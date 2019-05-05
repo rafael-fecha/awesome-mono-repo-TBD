@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "commitmsg": "commitlint -e HUSKY_GIT_PARAMS"
-  }
-}
