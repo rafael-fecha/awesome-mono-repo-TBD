@@ -4,7 +4,9 @@
   "description": "mono repo prototype to develop some tools with the approach of trunk based development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lerna exec build",
+    "bootstrap": "lerna bootstrap --hoist --progress",
+    "test": "lerna exec test"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,8 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "@stencil/core": "0.18.1"
   }
 }
