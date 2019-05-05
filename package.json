@@ -26,5 +26,8 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "hooks": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   }
 }
