@@ -1,0 +1,31 @@
+{
+  "name": "awesome-mono-repo-tbd",
+  "version": "1.0.0",
+  "description": "mono repo prototype to develop some tools with the approach of trunk based development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-fecha/awesome-mono-repo-TBD.git"
+  },
+  "author": "Rafael Fecha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafael-fecha/awesome-mono-repo-TBD/issues"
+  },
+  "homepage": "https://github.com/rafael-fecha/awesome-mono-repo-TBD#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "husky": "^2.2.0",
+    "lerna": "^3.13.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
