@@ -1,23 +1,54 @@
 #!/usr/bin/env node
-
 const [, , cmdName, ...packageNames] = process.argv;
 const { execSync, exec } = require("child_process");
-const { intersection } = require("ramda");
+const { pipe, isEmpty, trim, split } = require("ramda");
 
-const packages = execSync("lerna list", { encoding: "utf-8" })
-  .trim()
-  .split("\n");
+exec("lerna list", (a, result) => {
+  const totalPackages = pipe(
+    trim,
+    split("\n")
+  )(result);
+
+  const matchedPackages = totalPackages.filter(
+    package =>
+      !isEmpty(
+        packageNames.filter(packageName => package.endsWith(packageName))
+      )
+  );
+
+  partCmd(matchedPackages);
+});
+
 const checkCmd = cmd => {
   switch (cmd) {
     case "bootstrap":
-      return "lerna bootstrap";
+      return {
+        message: "lerna bootstrap",
+        valid: true
+      };
     case "build":
-      return `lerna run build`;
+      return {
+        message: `lerna run build`,
+        valid: true
+      };
     default:
-      console.error(`The ${cmd} that you provided is not yet supported...`);
+      return {
+        message: `The ${cmd} that you provided is not yet supported...`,
+        valid: false
+      };
   }
 };
-const runCmd = cmd => package => exec(`${checkCmd(cmd)} --scope ${package}`);
-const partCmd = runCmd(cmdName);
+const runCmd = cmd => packages => {
+  if (checkCmd(cmd).valid) {
+    execSync(
+      `${checkCmd(cmd).message} ${packages.reduce(
+        (a, b) => `${a} --scope ${b} `,
+        ""
+      )} --concurrency=4`
+    );
+  } else {
+    console.error(checkCmd(cmd).message);
+  }
+};
 
-const execCmdOnPackages = intersection(packages, packageNames).forEach(partCmd);
+const partCmd = runCmd(cmdName);
