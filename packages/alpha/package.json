@@ -1,6 +1,6 @@
 {
   "name": "alpha",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -16,7 +16,6 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "dependencies": {},
   "devDependencies": {
     "@stencil/core": "~0.16.2"
   },

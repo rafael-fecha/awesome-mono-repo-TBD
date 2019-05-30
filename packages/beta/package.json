@@ -1,6 +1,6 @@
 {
   "name": "beta-element",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "beta element in polymer",
   "main": "beta-element.js",
   "dependencies": {
