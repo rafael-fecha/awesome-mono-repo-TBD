@@ -14,5 +14,8 @@
   },
   "dependencies": {
     "ramda": "^0.26.1"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }

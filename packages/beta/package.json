@@ -1,5 +1,6 @@
 {
   "name": "beta-element",
+  "version": "0.0.1",
   "description": "beta element in polymer",
   "main": "beta-element.js",
   "dependencies": {
@@ -12,5 +13,8 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "wct-mocha": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
