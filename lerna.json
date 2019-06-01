@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "1.3.0",
+  "version": "independent",
   "command": {
     "publish": {
       "conventionalCommits": true
