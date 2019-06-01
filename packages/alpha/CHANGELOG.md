@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/rafael-fecha/awesome-mono-repo-TBD/compare/alpha@1.5.0...alpha@1.5.1) (2019-06-01)
+
+
+### Bug Fixes
+
+* some change ([66f9fcf](https://github.com/rafael-fecha/awesome-mono-repo-TBD/commit/66f9fcf))
+
+
+
+
+
 # [1.5.0](https://github.com/rafael-fecha/awesome-mono-repo-TBD/compare/alpha@1.4.0...alpha@1.5.0) (2019-06-01)
 
 
