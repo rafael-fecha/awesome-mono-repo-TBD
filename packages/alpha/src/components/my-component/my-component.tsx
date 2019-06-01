@@ -27,6 +27,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World my friend lets test without git tag! I'm {this.getText()}</div>;
+    return <div>Hello, World my friend lets test I'm {this.getText()}</div>;
   }
 }
