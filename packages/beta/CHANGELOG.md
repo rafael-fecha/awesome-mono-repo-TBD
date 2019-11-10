@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/rafael-fecha/awesome-mono-repo-TBD/compare/beta-element@1.1.0...beta-element@1.1.1) (2019-11-10)
+
+
+### Bug Fixes
+
+* add licence file ([49346f7](https://github.com/rafael-fecha/awesome-mono-repo-TBD/commit/49346f7))
+* add licence to beta ([9fc1d6c](https://github.com/rafael-fecha/awesome-mono-repo-TBD/commit/9fc1d6c))
+
+
+
+
+
 # 1.1.0 (2019-11-10)
 
 
