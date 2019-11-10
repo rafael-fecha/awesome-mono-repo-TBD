@@ -17,5 +17,6 @@
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
-  "gitHead": "15246209680489384486ad38097798d1c4ddab7a"
+  "license": "MIT",
+  "gitHead": "5d16ad25db859fae610e5d4e21487f78a2e5dc47"
 }
