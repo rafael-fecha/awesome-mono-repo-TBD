@@ -1,12 +1,16 @@
 {
   "name": "awesome-mono-repo-tbd",
+  "private": true,
   "version": "1.0.0",
   "description": "mono repo prototype to develop some tools with the approach of trunk based development",
   "main": "index.js",
   "scripts": {
+    "clean": "lerna exec clean",
     "build": "lerna exec build",
-    "bootstrap": "lerna bootstrap --hoist --progress",
-    "test": "lerna exec test"
+    "bootstrap": "yarn",
+    "test": "lerna exec test",
+    "align:versions": "syncpack fix-mistmatches",
+    "publish": "lerna publish from-package"
   },
   "repository": {
     "type": "git",
@@ -34,7 +38,7 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "dependencies": {
-    "@stencil/core": "0.18.1"
+  "workspaces": {
+    "packages": ["packages/*"]
   }
 }
