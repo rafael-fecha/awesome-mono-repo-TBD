@@ -10,7 +10,7 @@
     "bootstrap": "yarn",
     "test": "lerna exec test",
     "align:versions": "syncpack fix-mistmatches",
-    "publish": "lerna publish from-package"
+    "publish:packages": "lerna publish from-package"
   },
   "repository": {
     "type": "git",
