@@ -40,5 +40,8 @@
   },
   "workspaces": {
     "packages": ["packages/*"]
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
